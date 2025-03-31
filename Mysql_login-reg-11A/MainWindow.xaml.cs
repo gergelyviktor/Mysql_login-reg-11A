@@ -42,5 +42,11 @@ namespace Mysql_login_reg_11A {
             }
             kapcs.Close();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e) {
+            if (txtRegJelszo1.Password == txtRegJelszo2.Password) {
+                MessageBox.Show("A két jelszó megegyezik!");
+            }
+        }
     }
 }
