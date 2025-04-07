@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:Mysql_login_reg_11A"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Margin="0,0,0,3">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="203" Margin="16,229,0,0" VerticalAlignment="Top" Width="238"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="168" Margin="471,41,0,0" VerticalAlignment="Top" Width="262"/>
+
         <Label Content="Név:" HorizontalAlignment="Left" Margin="36,37,0,0" VerticalAlignment="Top"/>
         <Label Content="Jelszó:" HorizontalAlignment="Left" Margin="36,94,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtNev" HorizontalAlignment="Left" Margin="112,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
@@ -20,6 +23,22 @@
         <TextBox x:Name="txtRegnev" HorizontalAlignment="Left" Margin="112,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <PasswordBox x:Name="txtRegJelszo1" HorizontalAlignment="Left" Margin="112,322,0,0" VerticalAlignment="Top" Width="120"/>
         <PasswordBox x:Name="txtRegJelszo2" HorizontalAlignment="Left" Margin="112,364,0,0" VerticalAlignment="Top" Width="120"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="167" Margin="20,32,0,0" VerticalAlignment="Top" Width="234"/>
+        <Label Content="Belépés (SELECT)" HorizontalAlignment="Left" Margin="172,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Regisztráció (INSERT)" HorizontalAlignment="Left" Margin="172,0,0,0" VerticalAlignment="Center"/>
+        <Label Content="Jelszóváltoztatás (UPDATE)" HorizontalAlignment="Left" Margin="571,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="User törlés (DELETE)" HorizontalAlignment="Left" Margin="617,217,0,0" VerticalAlignment="Top"/>
+        <Label Content="Régi jelszó" HorizontalAlignment="Left" Margin="481,53,0,0" VerticalAlignment="Top"/>
+        <Label Content="Új jelszó" HorizontalAlignment="Left" Margin="487,103,0,0" VerticalAlignment="Top"/>
+        <Label Content="Új jelszó újra" HorizontalAlignment="Left" Margin="487,145,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtRegiJelszo" HorizontalAlignment="Left" Margin="586,61,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtUjJelszo1" HorizontalAlignment="Left" Margin="586,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtUjJelszo2" HorizontalAlignment="Left" Margin="586,145,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Módosít" HorizontalAlignment="Left" Margin="610,183,0,0" VerticalAlignment="Top" Click="Button_Click_2"/>
+        <CheckBox Content="Biztosan törölni akarja a usert?" HorizontalAlignment="Left" Margin="514,259,0,0" VerticalAlignment="Top"/>
+        <Button Content="Töröl" HorizontalAlignment="Left" Margin="623,289,0,0" VerticalAlignment="Top"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="77" Margin="471,245,0,0" VerticalAlignment="Top" Width="262"/>
+        <ListBox x:Name="lbUserek" Margin="305,0,346,0" SelectionChanged="lbUserek_SelectionChanged"/>
 
     </Grid>
 </Window>
